@@ -1,2 +1,5 @@
-$color: #fff;
-$color2: #000;
+@import "./base/normalize";
+@import "./base/fonts";
+@import "./utils/variables";
+@import "./layout/header";
+@import "./layout/footer";
