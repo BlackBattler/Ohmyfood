@@ -1,9 +1,10 @@
 footer{
-    background-color: black;
+    background-color: $background-color-footer;
     color: white;
     padding: 10px 0 20px 20px;
     & h2{
         font-family: 'Shrikhand', sans-serif;
+        font-weight: 100;
     }
     & ul{
         list-style: none;
@@ -18,7 +19,6 @@ footer{
                     width: 25px;
                 }
             }
-
         }
     }
 }
