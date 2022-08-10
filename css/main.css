@@ -71,12 +71,6 @@ pre {
    */
 a {
   background-color: transparent;
-  color: inherit;
-  text-decoration: none;
-}
-
-ol, ul {
-  list-style: none;
 }
 
 /**
@@ -352,4 +346,36 @@ template {
 
 body {
   font-family: "Roboto", sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 20px 0 10px;
+}
+.header__logo img {
+  width: 150px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 10px 0 20px 20px;
+}
+footer h2 {
+  font-family: "Shrikhand", sans-serif;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+footer ul li {
+  margin-bottom: 10px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+}
+footer ul li a i {
+  width: 25px;
 }/*# sourceMappingURL=main.css.map */
