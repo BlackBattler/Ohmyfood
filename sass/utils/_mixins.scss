@@ -1,0 +1,8 @@
+@mixin bouton {
+    background: linear-gradient(1turn ,$colorPrimary, $colorSecondary);
+    border: none;
+    border-radius: 25px;
+    height: 50px;
+    width: 200px;
+    color: white;
+}

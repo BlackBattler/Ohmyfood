@@ -29,13 +29,19 @@ main {
   display: block;
 }
 
-/**
-   * Correct the font size and margin on `h1` elements within `section` and
-   * `article` contexts in Chrome, Firefox, and Safari.
-   */
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+  font-size: 26px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+p {
+  font-size: 16px;
+  margin: 0;
 }
 
 /* Grouping content
@@ -359,31 +365,50 @@ body {
 main {
   display: flex;
   flex-direction: column;
+  /*------------------------------ SECTION LOCALISATION ------------------------------*/
+  /*------------------------------ SECTION RESERVATION ------------------------------*/
+  /*------------------------------ SECTION FONCTIONNEMENT ------------------------------*/
+  /*------------------------------ SECTION RESTAURANTS ------------------------------*/
 }
 main .location {
   background-color: rgb(235, 235, 235);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 1px 0;
   text-align: center;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.2);
+  height: 50px;
 }
 main .location i {
   padding-right: 20px;
 }
 main .location p {
   font-weight: 600;
-  font-size: 16px;
 }
 main .reservation {
   background-color: rgb(245, 245, 245);
-}
-main .reservation h2 {
-  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  padding: 10px 35px 0;
+  padding: 20px 0 50px;
+}
+main .reservation h1 {
+  width: 300px;
+  margin: 20px 0;
 }
 main .reservation p {
-  border: 1px solid green;
-  text-align: center;
+  width: 350px;
+  margin-bottom: 30px;
+}
+main .reservation button {
+  background: linear-gradient(1turn, #9356DC, #FF79DA);
+  border: none;
+  border-radius: 25px;
+  height: 50px;
+  width: 200px;
+  color: white;
 }
 
 footer {
@@ -409,4 +434,7 @@ footer ul li a {
 }
 footer ul li a i {
   width: 25px;
+}
+footer ul li a:hover {
+  color: #9356DC;
 }/*# sourceMappingURL=main.css.map */

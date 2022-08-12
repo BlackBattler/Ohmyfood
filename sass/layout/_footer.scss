@@ -1,5 +1,5 @@
 footer{
-    background-color: $background-color-footer;
+    background-color: $backgroundColorFooter;
     color: white;
     padding: 10px 0 20px 20px;
     & h2{
@@ -17,6 +17,9 @@ footer{
                 font-size: 16px;
                 & i{
                     width: 25px;
+                }
+                &:hover{
+                    color: $colorPrimary;
                 }
             }
         }
