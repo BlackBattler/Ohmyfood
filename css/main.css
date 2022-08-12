@@ -365,28 +365,27 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  /*------------------------------ SECTION LOCALISATION ------------------------------*/
-  /*------------------------------ SECTION RESERVATION ------------------------------*/
-  /*------------------------------ SECTION FONCTIONNEMENT ------------------------------*/
-  /*------------------------------ SECTION RESTAURANTS ------------------------------*/
 }
-main .location {
+
+/*------------------------------ SECTION LOCALISATION ------------------------------*/
+.location {
   background-color: rgb(235, 235, 235);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1px 0;
+  padding: 15px 0;
   text-align: center;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.2);
-  height: 50px;
 }
-main .location i {
+.location i {
   padding-right: 20px;
 }
-main .location p {
+.location p {
   font-weight: 600;
 }
-main .reservation {
+
+/*------------------------------ SECTION RESERVATION ------------------------------*/
+.reservation {
   background-color: rgb(245, 245, 245);
   display: flex;
   flex-direction: column;
@@ -394,31 +393,79 @@ main .reservation {
   text-align: center;
   padding: 20px 0 50px;
 }
-main .reservation h1 {
-  width: 300px;
-  margin: 20px 0;
+.reservation h1 {
+  padding: 20px 50px;
 }
-main .reservation p {
-  width: 350px;
-  margin-bottom: 30px;
+.reservation p {
+  padding: 0 25px 30px;
 }
-main .reservation button {
+.reservation button {
   background: linear-gradient(1turn, #9356DC, #FF79DA);
   border: none;
   border-radius: 25px;
   height: 50px;
-  width: 200px;
+  width: 225px;
   color: white;
   opacity: 1;
   box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
   transition-duration: 0.2s;
   cursor: pointer;
 }
-main .reservation button:hover {
+.reservation button:hover {
   opacity: 0.8;
   box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
+/*------------------------------ SECTION FONCTIONNEMENT ------------------------------*/
+.functioning {
+  padding: 50px 20px 70px;
+  flex-direction: column;
+}
+.functioning h2 {
+  margin-bottom: 15px;
+}
+.functioning > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.functioning__step {
+  display: flex;
+  height: 75px;
+  border-radius: 25px;
+  align-items: center;
+  background-color: rgb(245, 245, 245);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.functioning__step:hover {
+  background-color: rgba(147, 86, 220, 0.1);
+}
+.functioning__step:hover i {
+  color: #9356DC;
+}
+.functioning__step__number {
+  position: relative;
+  left: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: white;
+}
+.functioning__step i {
+  font-size: 20px;
+  color: gray;
+  padding: 0 20px;
+}
+.functioning__step__text {
+  font-weight: 700;
+}
+
+/*------------------------------ SECTION RESTAURANTS ------------------------------*/
 footer {
   background-color: rgb(60, 60, 60);
   color: white;
