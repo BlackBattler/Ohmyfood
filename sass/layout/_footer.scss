@@ -1,10 +1,11 @@
 footer{
     background-color: $backgroundColorFooter;
     color: white;
-    padding: 10px 0 20px 20px;
+    padding: 20px 0 20px 20px;
     & h2{
         font-family: 'Shrikhand', sans-serif;
         font-weight: 100;
+        font-size: 20px;
     }
     & ul{
         list-style: none;

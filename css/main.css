@@ -354,11 +354,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.header {
+header {
   text-align: center;
   padding: 20px 0 10px;
 }
-.header__logo img {
+header .logo img {
   width: 150px;
 }
 
@@ -419,7 +419,6 @@ main {
 /*------------------------------ SECTION FONCTIONNEMENT ------------------------------*/
 .functioning {
   padding: 50px 20px 70px;
-  flex-direction: column;
 }
 .functioning h2 {
   margin-bottom: 15px;
@@ -466,14 +465,63 @@ main {
 }
 
 /*------------------------------ SECTION RESTAURANTS ------------------------------*/
+.restaurant {
+  background-color: rgb(245, 245, 245);
+  padding: 50px 20px 70px;
+}
+.restaurant h2 {
+  margin-bottom: 15px;
+}
+.restaurant > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.restaurant a {
+  text-decoration: none;
+  color: inherit;
+}
+.restaurant__card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  height: 250px;
+}
+.restaurant__card img {
+  height: 60%;
+  flex: 1 1 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.restaurant__card .image1 {
+  -o-object-position: 50% 70%;
+     object-position: 50% 70%;
+}
+.restaurant__card .image2 {
+  -o-object-position: 50% 60%;
+     object-position: 50% 60%;
+}
+.restaurant__card .image3 {
+  -o-object-position: 50% 90%;
+     object-position: 50% 90%;
+}
+.restaurant__card .image4 {
+  -o-object-position: 50% 80%;
+     object-position: 50% 80%;
+}
+
 footer {
   background-color: rgb(60, 60, 60);
   color: white;
-  padding: 10px 0 20px 20px;
+  padding: 20px 0 20px 20px;
 }
 footer h2 {
   font-family: "Shrikhand", sans-serif;
   font-weight: 100;
+  font-size: 20px;
 }
 footer ul {
   list-style: none;

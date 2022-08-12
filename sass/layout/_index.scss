@@ -48,7 +48,6 @@ main {
 /*------------------------------ SECTION FONCTIONNEMENT ------------------------------*/
 .functioning {
     padding: 50px 20px 70px;
-    flex-direction: column;
 
     & h2 {
         margin-bottom: 15px;
@@ -71,6 +70,7 @@ main {
 
         &:hover {
             background-color: rgba($colorPrimary, 10%);
+
             & i {
                 color: $colorPrimary;
             }
@@ -102,3 +102,55 @@ main {
 }
 
 /*------------------------------ SECTION RESTAURANTS ------------------------------*/
+.restaurant {
+    background-color: $backgroundColorLightGrey;
+    padding: 50px 20px 70px;
+
+    & h2 {
+        margin-bottom: 15px;
+    }
+
+    &>div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    & a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    &__card {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        height: 250px;
+
+        & img {
+            height: 60%;
+            flex: 1 1 100%;
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .image1{
+            object-position: 50% 70%;
+        }
+
+        .image2{
+            object-position: 50% 60%;
+        }
+
+        .image3{
+            object-position: 50% 90%;
+        }
+
+        .image4{
+            object-position: 50% 80%;
+        }
+
+    }
+}
