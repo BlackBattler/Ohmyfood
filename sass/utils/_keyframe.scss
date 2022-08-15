@@ -26,3 +26,12 @@
     }
     
 }
+
+@keyframes menuApparition{
+    0%{
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 100%;
+    }
+}

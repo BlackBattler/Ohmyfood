@@ -1,0 +1,118 @@
+/*------------------------------ BACKGROUND IMAGE ------------------------------*/
+#laPaletteDuGoutImage {
+    background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+}
+
+#laNoteEnchanteeImage {
+    background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+}
+
+#aLaFrancaiseImage {
+    background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+}
+
+#leDeliceDesSensImage {
+    background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+}
+
+.restaurantBackground {
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+/*------------------------------ SECTION MENU ------------------------------*/
+.menu {
+    margin-top: -50px;
+    background-color: $backgroundColorLightGrey;
+    border-radius: 25px 25px 0 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 50px;
+    gap: 25px;
+
+    &__restaurant {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 50px 0 15px;
+        align-items: center;
+
+        & h1 {
+            font-family: Shrikhand, arial;
+            font-weight: 100;
+            font-size: 26px;
+        }
+
+        &__favourite {
+            font-size: 26px;
+            @include heartCheckbox
+        }
+    }
+
+    & fieldset {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        padding: 0 15px;
+        gap: 20px;
+
+        & legend {
+            text-transform: uppercase;
+            width: 20px;
+            border-bottom: 3px solid $colorTertiary;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__card {
+        background-color: white;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        height: 70px;
+
+
+        animation: menuApparition 800ms;
+        animation-fill-mode: forwards;
+        opacity: 0%;
+
+        &:nth-child(2){
+            animation-delay: 0.2s;
+        }
+
+        &:nth-child(3){
+            animation-delay: 0.4s;
+        }
+
+        &:nth-child(4){
+            animation-delay: 0.6s;
+        }
+
+
+        &__description {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__nom {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        &__prix {
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+
+    &__commander {
+        display: flex;
+        justify-content: center;
+
+        & button {
+            height: 50px;
+            width: 150px;
+            @include bouton
+        }
+    }
+}

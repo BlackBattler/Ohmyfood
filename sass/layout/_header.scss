@@ -1,7 +1,23 @@
-header{
-    text-align: center;
+header {
     padding: 20px 0 10px;
-    .logo img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    .logo img {
         width: 150px;
     }
+
+    .backToIndex {
+        position: absolute;
+        left: 30px;
+
+        & i {
+            font-size: 20px;
+            color: black;
+        }
+
+    }
+
+
 }

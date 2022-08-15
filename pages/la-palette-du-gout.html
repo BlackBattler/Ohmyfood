@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Palette du Goût</title>
+
+    <!-- KITS -->
+    <script src="https://kit.fontawesome.com/9092a6acfc.js" crossorigin="anonymous"></script>
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="../css/main.min.css">
+</head>
+
+<body>
+    <!-- SECTION HEADER -->
+    <header>
+        <!-- BACK TO HOMEPAGE -->
+        <a href="../index.html" class="backToIndex"><i class="fa-solid fa-arrow-left"></i></a>
+
+        <!-- SECTION LOGO -->
+        <div class="logo">
+            <img src="../images/logo/ohmyfood.png" alt="logo ohmyfood">
+        </div>
+    </header>
+
+    <!-- SECTION MAIN -->
+    <main>
+        <div id="laPaletteDuGoutImage" class="restaurantBackground"></div>
+        <section class="menu">
+
+            <!-- TITRE -->
+            <div class="menu__restaurant">
+                <h1>La palette du goût</h1>
+                <label class="menu__restaurant__favourite">
+                    <input type="checkbox" />
+                    <i class="fa-regular fa-heart"></i>
+                </label>
+            </div>
+
+            <!-- SECTION ENTREE -->
+            <fieldset>
+                <legend>Entrées</legend>
+                <div class="menu__card">
+                    <label for="fricasseeEscargot">
+                        <span class="menu__card__description">
+                            <span class="menu__card__nom">Fricassée d'escargot</span>
+                            <span class="menu__card__side">Au piment d'Espelette</span>
+                        </span>
+                        <span class="menu__card__prix">25€</span>
+                    </label>
+                    <input type="radio" name="entreePaletteDuGout" id="fricasseeEscargot">
+                </div>
+
+                <div class="menu__card">
+                    <label for="foieGradDeCarnardMiCuit">
+                        <span class="menu__card__description">
+                            <span class="menu__card__nom">Foie gras de canard mi-cuit</span>
+                            <span class="menu__card__side">Et ses copeaux de truffe noire</span>
+                        </span>
+                        <span class="menu__card__prix">35€</span>
+                    </label>
+                    <input type="radio" name="entreePaletteDuGout" id="foieGradDeCarnardMiCuit">
+                </div>
+
+                <div class="menu__card">
+                    <label for="oeufAuPlat">
+                        <span class="menu__card__description">
+                            <span class="menu__card__nom">Oeuf au plat</span>
+                            <span class="menu__card__side">Assaisonné à la truffe sur lit de caviar</span>
+                        </span>
+                        <span class="menu__card__prix">20€</span>
+                    </label>
+                    <input type="radio" name="entreePaletteDuGout" id="oeufAuPlat">
+                </div>
+
+            </fieldset>
+
+            <!-- SECTION PLATS -->
+            <fieldset>
+                <legend>Plats</legend>
+
+                <div class="menu__card">
+                    <label for="filetdeBoeufAuxHerbes">
+                        <span class="menu__card__description">
+                            <span class="menu__card__nom">Filet de boeuf aux herbes</span>
+                            <span>Accompagné de sa ribambelle de légumes</span>
+                        </span>
+                        <span class="menu__card__prix">40€</span>
+                    </label>
+                    <input type="radio" name="platPaletteDuGout" id="filetdeBoeufAuxHerbes">
+                </div>
+
+                <div class="menu__card">
+                    <label for="ParmentierDeQueueDeBoeuf">
+                        <span class="menu__card__description">
+                            <span class="menu__card__nom">Parmentier de queue de boeuf</span>
+                            <span>À la truffe noire sur sa purée de panais</span>
+                        </span>
+                        <span class="menu__card__prix">35€</span>
+                    </label>
+                    <input type="radio" name="platPaletteDuGout" id="ParmentierDeQueueDeBoeuf">
+                </div>
+
+                <div class="menu__card">
+                    <label for="filetDeTurbot">
+                        <span class="menu__card__description">
+                            <span class="menu__card__nom">Filet de turbot</span>
+                            <span>Aux agrumes</span>
+                        </span>
+                        <span class="menu__card__prix">44€</span>
+                    </label>
+                    <input type="radio" name="platPaletteDuGout" id="filetDeTurbot">
+                </div>
+            </fieldset>
+
+            <!-- SECTION DESSERT -->
+            <fieldset>
+                <legend>Desserts</legend>
+
+                <div class="menu__card">
+                    <label for="parisBrest">
+                        <span class="menu__card__description">
+                            <span class="menu__card__nom">Paris-Brest</span>
+                            <span>Revisité</span>
+                        </span>
+                        <span class="menu__card__prix">18€</span>
+                    </label>
+                    <input type="radio" name="dessertPaletteDuGout" id="parisBrest">
+                </div>
+
+                <div class="menu__card">
+                    <label for="macaronAuChocolatException">
+                        <span class="menu__card__description">
+                            <span class="menu__card__nom">Macaron au chocolat d'exception </span>
+                            <span>Et glace à la vanille de Madagascar</span>
+                        </span>
+                        <span class="menu__card__prix">22€</span>
+                    </label>
+                    <input type="radio" name="dessertPaletteDuGout" id="macaronAuChocolatException">
+                </div>
+
+                <div class="menu__card">
+                    <label for="mousseAuChocolat">
+                        <span class="menu__card__description">
+                            <span class="menu__card__nom">Mousse au chocolat </span>
+                            <span>Au piment d'Espelette et à la truffe noire</span>
+                        </span>
+                        <span class="menu__card__prix">23€</span>
+                    </label>
+                    <input type="radio" name="dessertPaletteDuGout" id="mousseAuChocolat">
+                </div>
+            </fieldset>
+
+            <!-- BOUTON COMMANDER -->
+            <div class="menu__commander">
+                <button type="button">Commander</button>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- SECTION FOOTER -->
+    <footer>
+        <h2>ohmyfood</h2>
+        <ul>
+            <li><a href=#><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
+            <li><a href=#><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
+            <li><a href=#>Mentions légales</a></li>
+            <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

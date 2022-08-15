@@ -40,6 +40,8 @@ main {
     }
 
     & button {
+            height: 50px;
+            width: 225px;
         @include bouton;
     }
 
@@ -175,6 +177,7 @@ main {
             right: 5%;
         }
     }
+
     &__favourite {
         position: absolute;
         right: 5%;
