@@ -15,3 +15,24 @@
         box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
     }
 }
+
+@mixin heartCheckbox {
+
+    & input[type="checkbox"]{
+        display: none;
+    }
+
+    & input[type="checkbox"]~i{
+        animation: heartUnlike 500ms;
+    }
+
+    & input[type="checkbox"]:checked~i {
+        font-weight: 900;
+        background: linear-gradient(210deg, $colorPrimary, $colorSecondary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        animation: heartLike 500ms;
+    }
+
+}
