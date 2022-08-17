@@ -31,7 +31,7 @@
     }
 
     .fa-solid {
-        visibility: hidden;
+        opacity: 0%;
         background: linear-gradient(210deg, $colorPrimary, $colorSecondary);
         background-clip: text;
         -webkit-background-clip: text;
@@ -40,13 +40,19 @@
     }
 
     & input[type="checkbox"]:checked~.fa-solid {
-        visibility: visible;
+        opacity: 100%;
         animation: heartLike 1000ms 150ms backwards;
     }
 
-    & input[type="checkbox"]~i:hover{
+    & input[type="checkbox"]:not(:checked)~.fa-solid {
+        animation: heartUnlike 1000ms 150ms backwards;
+    }
+
+    & input[type="checkbox"]~i:hover {
         cursor: pointer;
     }
+
+
 }
 
 @mixin carteMenu {

@@ -48,7 +48,13 @@
         &__favourite {
             font-size: 26px;
             @include heartCheckbox
+
         }
+        
+        & i {
+            padding-right: 5px;
+        }
+
     }
 
     & fieldset {

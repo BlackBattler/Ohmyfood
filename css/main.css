@@ -2,9 +2,10 @@
 @-webkit-keyframes heartLike {
   0% {
     transform: scale(0);
+    opacity: 100%;
   }
   50% {
-    transform: scale(1.5);
+    transform: scale(1.4);
   }
   100% {
     transform: scale(1.1);
@@ -13,9 +14,10 @@
 @keyframes heartLike {
   0% {
     transform: scale(0);
+    opacity: 100%;
   }
   50% {
-    transform: scale(1.5);
+    transform: scale(1.4);
   }
   100% {
     transform: scale(1.1);
@@ -24,23 +26,33 @@
 @-webkit-keyframes heartUnlike {
   0% {
     transform: scale(1.1);
+    opacity: 100%;
   }
-  50% {
-    transform: scale(1.5);
+  30% {
+    transform: scale(1.3);
+  }
+  60% {
+    transform: scale(0.6);
   }
   100% {
     transform: scale(0);
+    opacity: 0%;
   }
 }
 @keyframes heartUnlike {
   0% {
     transform: scale(1.1);
+    opacity: 100%;
   }
-  50% {
-    transform: scale(1.5);
+  30% {
+    transform: scale(1.3);
+  }
+  60% {
+    transform: scale(0.6);
   }
   100% {
     transform: scale(0);
+    opacity: 0%;
   }
 }
 @-webkit-keyframes menuApparition {
@@ -619,7 +631,7 @@ main {
   transform: scale(0.9);
 }
 .restaurant__favourite .fa-solid {
-  visibility: hidden;
+  opacity: 0%;
   background: linear-gradient(210deg, #9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
@@ -627,9 +639,13 @@ main {
   transform: scale(1.1);
 }
 .restaurant__favourite input[type=checkbox]:checked ~ .fa-solid {
-  visibility: visible;
+  opacity: 100%;
   -webkit-animation: heartLike 1000ms 150ms backwards;
           animation: heartLike 1000ms 150ms backwards;
+}
+.restaurant__favourite input[type=checkbox]:not(:checked) ~ .fa-solid {
+  -webkit-animation: heartUnlike 1000ms 150ms backwards;
+          animation: heartUnlike 1000ms 150ms backwards;
 }
 .restaurant__favourite input[type=checkbox] ~ i:hover {
   cursor: pointer;
@@ -723,7 +739,7 @@ footer ul li a:hover {
   transform: scale(0.9);
 }
 .menu__restaurant__favourite .fa-solid {
-  visibility: hidden;
+  opacity: 0%;
   background: linear-gradient(210deg, #9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
@@ -731,12 +747,19 @@ footer ul li a:hover {
   transform: scale(1.1);
 }
 .menu__restaurant__favourite input[type=checkbox]:checked ~ .fa-solid {
-  visibility: visible;
+  opacity: 100%;
   -webkit-animation: heartLike 1000ms 150ms backwards;
           animation: heartLike 1000ms 150ms backwards;
 }
+.menu__restaurant__favourite input[type=checkbox]:not(:checked) ~ .fa-solid {
+  -webkit-animation: heartUnlike 1000ms 150ms backwards;
+          animation: heartUnlike 1000ms 150ms backwards;
+}
 .menu__restaurant__favourite input[type=checkbox] ~ i:hover {
   cursor: pointer;
+}
+.menu__restaurant i {
+  padding-right: 5px;
 }
 .menu fieldset {
   display: flex;
