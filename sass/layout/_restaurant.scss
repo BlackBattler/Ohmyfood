@@ -71,12 +71,14 @@
         background-color: white;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
         border-radius: 15px;
-        height: 70px;
+        height: 75px;
+        display: flex;
 
         /*-------------------- CARTE ANIMATION --------------------*/
         animation: menuApparition 800ms;
         animation-fill-mode: forwards;
         opacity: 0%;
+        @include carteMenu;
 
         &:nth-child(2) {
             animation-delay: 0.2s;
@@ -94,6 +96,9 @@
         &__description {
             display: flex;
             flex-direction: column;
+            gap: 5px;
+            padding: 15px 0 5px 15px;
+
         }
 
         &__nom {
@@ -104,6 +109,29 @@
         &__prix {
             font-size: 16px;
             font-weight: 600;
+            display: flex;
+            align-items: flex-end;
+            padding: 0 20px 10px;
+        }
+
+        &__radioCheckIcon {           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0 15px 15px 0;
+            background-color: $colorTertiary;
+            padding: 0 25px 0 25px;
+
+            & i {
+                color: white;
+                background-color: $colorTertiary;
+                border-radius: 50%;
+                font-size: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
         }
     }
 

@@ -25,17 +25,34 @@
         display: none;
     }
 
-    & input[type="checkbox"]~i {
-        animation: heartUnlike 500ms;
+    .fa-regular {
+        position: absolute;
+        transform: scale(0.9);
     }
 
-    & input[type="checkbox"]:checked~i {
-        font-weight: 900;
+    .fa-solid {
+        visibility: hidden;
         background: linear-gradient(210deg, $colorPrimary, $colorSecondary);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
-        animation: heartLike 500ms;
+        transform: scale(1.1);
     }
 
+    & input[type="checkbox"]:checked~.fa-solid {
+        visibility: visible;
+        animation: heartLike 1000ms 150ms backwards;
+    }
+
+    & input[type="checkbox"]~i:hover{
+        cursor: pointer;
+    }
+}
+
+@mixin carteMenu {
+
+    & input[type="radio"],
+    .menu__card__radioCheckIcon {
+        display: none;
+    }
 }
