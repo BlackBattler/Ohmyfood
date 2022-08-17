@@ -176,6 +176,10 @@ main {
             top: 5%;
             right: 5%;
         }
+
+        &:hover{
+            @include hoverAnimationCard;
+        }
     }
 
     &__favourite {

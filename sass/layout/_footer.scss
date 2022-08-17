@@ -20,7 +20,7 @@ footer{
                     width: 25px;
                 }
                 &:hover{
-                    color: $colorPrimary;
+                    color: lighten($colorPrimary, 15%);
                 }
             }
         }

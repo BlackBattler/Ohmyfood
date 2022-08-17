@@ -14,6 +14,12 @@
     }
 }
 
+@mixin hoverAnimationCard {
+    transform: scale(1.01);
+    background-color: rgba($colorPrimary, 10%)
+    
+}
+
 @mixin heartCheckbox {
 
     & input[type="checkbox"]{
@@ -34,3 +40,4 @@
     }
 
 }
+

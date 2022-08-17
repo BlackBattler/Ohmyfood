@@ -601,6 +601,10 @@ main {
   top: 5%;
   right: 5%;
 }
+.restaurant__card:hover {
+  transform: scale(1.01);
+  background-color: rgba(147, 86, 220, 0.1);
+}
 .restaurant__favourite {
   position: absolute;
   right: 5%;
@@ -650,7 +654,7 @@ footer ul li a i {
   width: 25px;
 }
 footer ul li a:hover {
-  color: #9356DC;
+  color: #bc95e9;
 }
 
 /*------------------------------ BACKGROUND IMAGE ------------------------------*/
