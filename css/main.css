@@ -780,6 +780,7 @@ footer ul li a:hover {
   border-radius: 15px;
   height: 75px;
   display: flex;
+  justify-content: space-between;
   /*-------------------- CARTE ANIMATION --------------------*/
   -webkit-animation: menuApparition 800ms;
           animation: menuApparition 800ms;
@@ -788,9 +789,11 @@ footer ul li a:hover {
   opacity: 0%;
   /*-------------------- DESCRIPTION --------------------*/
 }
-.menu__card input[type=radio],
-.menu__card .menu__card__radioCheckIcon {
+.menu__card input[type=radio] {
   display: none;
+}
+.menu__card :hover {
+  cursor: pointer;
 }
 .menu__card:nth-child(2) {
   -webkit-animation-delay: 0.2s;
@@ -813,12 +816,21 @@ footer ul li a:hover {
 .menu__card__nom {
   font-size: 18px;
   font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__card__side {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__card__prix {
-  font-size: 16px;
-  font-weight: 600;
+  display: flex;
+}
+.menu__card__prix p {
   display: flex;
   align-items: flex-end;
+  font-size: 16px;
+  font-weight: 600;
   padding: 0 20px 10px;
 }
 .menu__card__radioCheckIcon {
