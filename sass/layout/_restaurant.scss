@@ -32,6 +32,7 @@
     padding: 20px 0 50px;
     gap: 25px;
 
+    /*------------------------------ TITRE DES RESTAURANTS ------------------------------*/
     &__restaurant {
         display: flex;
         justify-content: space-between;
@@ -65,30 +66,31 @@
         }
     }
 
+    /*------------------------------ CARTE MENU ------------------------------*/
     &__card {
         background-color: white;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
         border-radius: 15px;
         height: 70px;
 
-
+        /*-------------------- CARTE ANIMATION --------------------*/
         animation: menuApparition 800ms;
         animation-fill-mode: forwards;
         opacity: 0%;
 
-        &:nth-child(2){
+        &:nth-child(2) {
             animation-delay: 0.2s;
         }
 
-        &:nth-child(3){
+        &:nth-child(3) {
             animation-delay: 0.4s;
         }
 
-        &:nth-child(4){
+        &:nth-child(4) {
             animation-delay: 0.6s;
         }
 
-
+        /*-------------------- DESCRIPTION --------------------*/
         &__description {
             display: flex;
             flex-direction: column;
@@ -105,6 +107,7 @@
         }
     }
 
+    /*------------------------------ BOUTON COMMANDER ------------------------------*/
     &__commander {
         display: flex;
         justify-content: center;

@@ -690,6 +690,9 @@ footer ul li a:hover {
   flex-direction: column;
   padding: 20px 0 50px;
   gap: 25px;
+  /*------------------------------ TITRE DES RESTAURANTS ------------------------------*/
+  /*------------------------------ CARTE MENU ------------------------------*/
+  /*------------------------------ BOUTON COMMANDER ------------------------------*/
 }
 .menu__restaurant {
   display: flex;
@@ -739,11 +742,13 @@ footer ul li a:hover {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   height: 70px;
+  /*-------------------- CARTE ANIMATION --------------------*/
   -webkit-animation: menuApparition 800ms;
           animation: menuApparition 800ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   opacity: 0%;
+  /*-------------------- DESCRIPTION --------------------*/
 }
 .menu__card:nth-child(2) {
   -webkit-animation-delay: 0.2s;
