@@ -670,10 +670,12 @@ footer h2 {
   font-family: "Shrikhand", sans-serif;
   font-weight: 100;
   font-size: 20px;
+  margin-bottom: 20px;
 }
 footer ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 footer ul li {
   margin-bottom: 10px;
@@ -905,4 +907,57 @@ footer ul li a:hover {
 .menu__commander button:hover {
   opacity: 0.8;
   box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+/*------------------------------ TABLETTE ------------------------------*/
+@media screen and (min-width: 768px) {
+  .pageIndex .functioning h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .pageIndex .restaurant {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px 50px;
+  }
+  .pageIndex .restaurant h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .pageIndex .restaurant__bloc {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .pageIndex .restaurant__card {
+    flex-basis: 45%;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer div {
+    display: flex;
+    gap: 150px;
+  }
+}
+/*------------------------------ LAPTOP ------------------------------*/
+@media screen and (min-width: 1024px) {
+  .pageIndex .functioning {
+    padding: 30px 20px 50px;
+  }
+  .pageIndex .functioning > div {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer div {
+    gap: 250px;
+  }
+}
+/*------------------------------ LAPTOP L ------------------------------*/
+@media screen and (min-width: 1440px) {
+  footer div {
+    gap: 500px;
+  }
 }/*# sourceMappingURL=main.css.map */
