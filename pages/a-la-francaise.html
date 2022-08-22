@@ -33,11 +33,177 @@
 
             <!-- TITRE -->
             <div class="menu__restaurant">
-                <h1>À la française</h1>
+                <h1>La palette du goût</h1>
                 <label class="menu__restaurant__favourite">
                     <input type="checkbox" />
                     <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
                 </label>
+            </div>
+
+            <!-- SECTION ENTREE -->
+            <fieldset>
+                <legend>Entrées</legend>
+
+                <div class="menu__card">
+                    <label for="tartareDePoulpeAcidule" class="menu__card__label">
+                        <span class="menu__card__description">
+                            <span class="menu__card__description__nom">Tartare de poulpe acidulé</span>
+                            <span class="menu__card__description__side">Aux zestes d'orange</span>
+                        </span>
+                        <span class="menu__card__prix">25€</span>
+                        <span>
+                            <input type="radio" name="entreePaletteDuGout" id="tartareDePoulpeAcidule">
+                            <span class="menu__card__radioCheckIcon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </span>
+                        </span>
+                    </label>
+                </div>
+
+                <div class="menu__card">
+                    <label for="velouteDeLegumeAntan" class="menu__card__label">
+                        <span class="menu__card__description">
+                            <span class="menu__card__description__nom">Velouté de légumes d'antan</span>
+                            <span class="menu__card__description__side">Carotte, panais, topinambour</span>
+                        </span>
+                        <span class="menu__card__prix">35€</span>
+                        <span>
+                            <input type="radio" name="entreePaletteDuGout" id="velouteDeLegumeAntan">
+                            <span class="menu__card__radioCheckIcon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </span>
+                        </span>
+                    </label>
+                </div>
+
+                <div class="menu__card">
+                    <label for="SoupeOignon" class="menu__card__label">
+                        <span class="menu__card__description">
+                            <span class="menu__card__description__nom">Soupe à l'oignon</span>
+                            <span class="menu__card__description__side">Revisitée</span>
+                        </span>
+                        <span class="menu__card__prix">20€</span>
+                        <span>
+                            <input type="radio" name="entreePaletteDuGout" id="SoupeOignon">
+                            <span class="menu__card__radioCheckIcon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </span>
+                        </span>
+                    </label>
+                </div>
+
+            </fieldset>
+
+            <!-- SECTION PLATS -->
+            <fieldset>
+                <legend>Plats</legend>
+
+                <div class="menu__card">
+                    <label for="coquillesSaintJacques" class="menu__card__label">
+                        <span class="menu__card__description">
+                            <span class="menu__card__description__nom">Coquilles Saint-Jacques</span>
+                            <span class="menu__card__description__side">Accompagnées d'une purée de panais</span>
+                        </span>
+                        <span class="menu__card__prix">40€</span>
+                        <span>
+                            <input type="radio" name="platPaletteDuGout" id="coquillesSaintJacques">
+                            <span class="menu__card__radioCheckIcon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </span>
+                        </span>
+                    </label>
+                </div>
+
+                <div class="menu__card">
+                    <label for="magretDeCanard" class="menu__card__label">
+                        <span class="menu__card__description">
+                            <span class="menu__card__description__nom">Magret de canard</span>
+                            <span class="menu__card__description__side">Et parmentier de pommes de terre</span>
+                        </span>
+                        <span class="menu__card__prix">35€</span>
+                        <span>
+                            <input type="radio" name="platPaletteDuGout" id="magretDeCanard">
+                            <span class="menu__card__radioCheckIcon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </span>
+                        </span>
+                    </label>
+                </div>
+
+                <div class="menu__card">
+                    <label for="pigeonneauIlleEtVilaine" class="menu__card__label">
+                        <span class="menu__card__description">
+                            <span class="menu__card__description__nom">Pigeonneau d'Ille-et-Vilaine</span>
+                            <span class="menu__card__description__side">Sur son lit de gnocchis aux légumes</span>
+                        </span>
+                        <span class="menu__card__prix">44€</span>
+                        <span>
+                            <input type="radio" name="platPaletteDuGout" id="pigeonneauIlleEtVilaine">
+                            <span class="menu__card__radioCheckIcon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </span>
+                        </span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <!-- SECTION DESSERT -->
+            <fieldset>
+                <legend>Desserts</legend>
+
+                <div class="menu__card">
+                    <label for="petalesDeViolettesGlaces" class="menu__card__label">
+                        <span class="menu__card__description">
+                            <span class="menu__card__description__nom">Pétales de violettes glacés</span>
+                            <span class="menu__card__description__side">Et purée de noisettes</span>
+                        </span>
+                        <span class="menu__card__prix">18€</span>
+                        <span>
+                            <input type="radio" name="dessertPaletteDuGout" id="petalesDeViolettesGlaces">
+                            <span class="menu__card__radioCheckIcon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </span>
+                        </span>
+                    </label>
+                </div>
+
+                <div class="menu__card">
+                    <label for="fondantAuChocolat" class="menu__card__label">
+                        <span class="menu__card__description">
+                            <span class="menu__card__description__nom">Fondant au chocolat</span>
+                            <span class="menu__card__description__side">Revisité</span>
+                        </span>
+                        <span class="menu__card__prix">22€</span>
+                        <span>
+                            <input type="radio" name="dessertPaletteDuGout" id="fondantAuChocolat">
+                            <span class="menu__card__radioCheckIcon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </span>
+                        </span>
+                    </label>
+                </div>
+
+                <div class="menu__card">
+                    <label for="millefeuilleCroustillant" class="menu__card__label">
+                        <span class="menu__card__description">
+                            <span class="menu__card__description__nom">Millefeuille croustillant</span>
+                            <span class="menu__card__description__side">Myrtilles et pâte d'amande</span>
+                        </span>
+                        <span class="menu__card__prix">23€</span>
+                        <span>
+                            <input type="radio" name="dessertPaletteDuGout" id="millefeuilleCroustillant">
+                            <span class="menu__card__radioCheckIcon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </span>
+                        </span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <!-- BOUTON COMMANDER -->
+            <div class="menu__commander">
+                <button type="button">Commander</button>
             </div>
 
         </section>

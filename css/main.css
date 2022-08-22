@@ -71,6 +71,16 @@
     opacity: 100%;
   }
 }
+@-webkit-keyframes radioSpinner {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes radioSpinner {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -781,6 +791,8 @@ footer ul li a:hover {
   height: 75px;
   display: flex;
   justify-content: space-between;
+  /*-------------------- RADIO ANIMATION --------------------*/
+  transform-origin: center right;
   /*-------------------- CARTE ANIMATION --------------------*/
   -webkit-animation: menuApparition 800ms;
           animation: menuApparition 800ms;
@@ -792,8 +804,21 @@ footer ul li a:hover {
 .menu__card input[type=radio] {
   display: none;
 }
-.menu__card :hover {
-  cursor: pointer;
+.menu__card:hover .menu__card__radioCheckIcon {
+  width: 80px;
+  transition-duration: 1s;
+}
+.menu__card:hover .menu__card__radioCheckIcon i {
+  -webkit-animation: radioSpinner 1s;
+          animation: radioSpinner 1s;
+  width: auto;
+}
+.menu__card input[type=radio]:checked ~ .menu__card__radioCheckIcon {
+  background-color: #32b091;
+  width: 80px;
+}
+.menu__card input[type=radio]:checked ~ i {
+  background-color: #32b091;
 }
 .menu__card:nth-child(2) {
   -webkit-animation-delay: 0.2s;
@@ -807,26 +832,34 @@ footer ul li a:hover {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
+.menu__card:nth-child(5) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+.menu__card__label {
+  display: inline-flex;
+  flex: 1 1 100%;
+}
 .menu__card__description {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  padding: 15px 0 5px 15px;
+  padding: 15px 10px 5px 15px;
+  height: 100%;
+  flex-basis: 80%;
 }
-.menu__card__nom {
+.menu__card__description__nom {
   font-size: 18px;
   font-weight: 600;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
-.menu__card__side {
+.menu__card__description__side {
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 .menu__card__prix {
-  display: flex;
-}
-.menu__card__prix p {
+  display: inline-flex;
+  height: 100%;
+  flex-basis: 20%;
   display: flex;
   align-items: flex-end;
   font-size: 16px;
@@ -839,7 +872,9 @@ footer ul li a:hover {
   align-items: center;
   border-radius: 0 15px 15px 0;
   background-color: #99E2D0;
-  padding: 0 25px 0 25px;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
 }
 .menu__card__radioCheckIcon i {
   color: white;
@@ -849,6 +884,7 @@ footer ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 0;
 }
 .menu__commander {
   display: flex;

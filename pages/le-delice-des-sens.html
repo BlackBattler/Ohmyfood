@@ -33,11 +33,177 @@
 
             <!-- TITRE -->
             <div class="menu__restaurant">
-                <h1>Le délice des sens</h1>
+                <h1>La palette du goût</h1>
                 <label class="menu__restaurant__favourite">
                     <input type="checkbox" />
                     <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
                 </label>
+            </div>
+
+            <!-- SECTION ENTREE -->
+            <fieldset>
+                <legend>Entrées</legend>
+
+                <div class="menu__card">
+                    <label for="tartareDeThon" class="menu__card__label">
+                        <span class="menu__card__description">
+                            <span class="menu__card__description__nom">Tartare de thon</span>
+                            <span class="menu__card__description__side">Assaisonné au yuzu</span>
+                        </span>
+                        <span class="menu__card__prix">25€</span>
+                        <span>
+                            <input type="radio" name="entreePaletteDuGout" id="tartareDeThon">
+                            <span class="menu__card__radioCheckIcon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </span>
+                        </span>
+                    </label>
+                </div>
+
+                <div class="menu__card">
+                    <label for="boucheeDeHomardCroustillant" class="menu__card__label">
+                        <span class="menu__card__description">
+                            <span class="menu__card__description__nom">Bouchée de homard croustillant</span>
+                            <span class="menu__card__description__side">Et sa farandole de petits légumes</span>
+                        </span>
+                        <span class="menu__card__prix">35€</span>
+                        <span>
+                            <input type="radio" name="entreePaletteDuGout" id="boucheeDeHomardCroustillant">
+                            <span class="menu__card__radioCheckIcon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </span>
+                        </span>
+                    </label>
+                </div>
+
+                <div class="menu__card">
+                    <label for="velouteDeCepes" class="menu__card__label">
+                        <span class="menu__card__description">
+                            <span class="menu__card__description__nom">Velouté de cèpes</span>
+                            <span class="menu__card__description__side">Aux truffes</span>
+                        </span>
+                        <span class="menu__card__prix">20€</span>
+                        <span>
+                            <input type="radio" name="entreePaletteDuGout" id="velouteDeCepes">
+                            <span class="menu__card__radioCheckIcon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </span>
+                        </span>
+                    </label>
+                </div>
+
+            </fieldset>
+
+            <!-- SECTION PLATS -->
+            <fieldset>
+                <legend>Plats</legend>
+
+                <div class="menu__card">
+                    <label for="pouletRotiAuxHerbesDeProvence" class="menu__card__label">
+                        <span class="menu__card__description">
+                            <span class="menu__card__description__nom">Poulet rôti aux herbes de Provence</span>
+                            <span class="menu__card__description__side">Et sa crème de truffe</span>
+                        </span>
+                        <span class="menu__card__prix">40€</span>
+                        <span>
+                            <input type="radio" name="platPaletteDuGout" id="pouletRotiAuxHerbesDeProvence">
+                            <span class="menu__card__radioCheckIcon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </span>
+                        </span>
+                    </label>
+                </div>
+
+                <div class="menu__card">
+                    <label for="langousteRotie" class="menu__card__label">
+                        <span class="menu__card__description">
+                            <span class="menu__card__description__nom">Langouste rôtie</span>
+                            <span class="menu__card__description__side">Et ses légumes de saison</span>
+                        </span>
+                        <span class="menu__card__prix">35€</span>
+                        <span>
+                            <input type="radio" name="platPaletteDuGout" id="langousteRotie">
+                            <span class="menu__card__radioCheckIcon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </span>
+                        </span>
+                    </label>
+                </div>
+
+                <div class="menu__card">
+                    <label for="coteDeBoeufAngus" class="menu__card__label">
+                        <span class="menu__card__description">
+                            <span class="menu__card__description__nom">Côte de boeuf Angus</span>
+                            <span class="menu__card__description__side">Et sa purée de panais</span>
+                        </span>
+                        <span class="menu__card__prix">44€</span>
+                        <span>
+                            <input type="radio" name="platPaletteDuGout" id="coteDeBoeufAngus">
+                            <span class="menu__card__radioCheckIcon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </span>
+                        </span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <!-- SECTION DESSERT -->
+            <fieldset>
+                <legend>Desserts</legend>
+
+                <div class="menu__card">
+                    <label for="farandoleDeDesserts" class="menu__card__label">
+                        <span class="menu__card__description">
+                            <span class="menu__card__description__nom">Farandole de desserts</span>
+                            <span class="menu__card__description__side">Du chef</span>
+                        </span>
+                        <span class="menu__card__prix">18€</span>
+                        <span>
+                            <input type="radio" name="dessertPaletteDuGout" id="farandoleDeDesserts">
+                            <span class="menu__card__radioCheckIcon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </span>
+                        </span>
+                    </label>
+                </div>
+
+                <div class="menu__card">
+                    <label for="cremeBrulee" class="menu__card__label">
+                        <span class="menu__card__description">
+                            <span class="menu__card__description__nom">Crème brulée</span>
+                            <span class="menu__card__description__side">Revisitée</span>
+                        </span>
+                        <span class="menu__card__prix">22€</span>
+                        <span>
+                            <input type="radio" name="dessertPaletteDuGout" id="cremeBrulee">
+                            <span class="menu__card__radioCheckIcon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </span>
+                        </span>
+                    </label>
+                </div>
+
+                <div class="menu__card">
+                    <label for="tiramisu" class="menu__card__label">
+                        <span class="menu__card__description">
+                            <span class="menu__card__description__nom">Tiramisu</span>
+                            <span class="menu__card__description__side">À la noisette</span>
+                        </span>
+                        <span class="menu__card__prix">23€</span>
+                        <span>
+                            <input type="radio" name="dessertPaletteDuGout" id="tiramisu">
+                            <span class="menu__card__radioCheckIcon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </span>
+                        </span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <!-- BOUTON COMMANDER -->
+            <div class="menu__commander">
+                <button type="button">Commander</button>
             </div>
 
         </section>

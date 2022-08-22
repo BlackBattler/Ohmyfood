@@ -51,8 +51,6 @@
     & input[type="checkbox"]~i:hover {
         cursor: pointer;
     }
-
-
 }
 
 @mixin carteMenu {
@@ -61,8 +59,26 @@
         display: none;
     }
 
-    :hover {
-        cursor: pointer;
+    &:hover {
+        .menu__card__radioCheckIcon {
+            width: 80px;
+            transition-duration: 1s;
+
+            & i {
+                animation: radioSpinner 1s;
+                width: auto;
+            }
+        }
+
+    }
+
+    & input[type="radio"]:checked~.menu__card__radioCheckIcon {
+        background-color: darken($colorTertiary, 30%);
+        width: 80px;
+    }
+
+    & input[type="radio"]:checked~i {
+        background-color: darken($colorTertiary, 30%);
     }
 
 }

@@ -31,14 +31,23 @@
         transform: scale(0);
         opacity: 0%;
     }
-} 
-    
-    
-@keyframes menuApparition{
-    0%{
+}
+
+
+@keyframes menuApparition {
+    0% {
         transform: translateY(10px);
     }
+
     100% {
         opacity: 100%;
+    }
+}
+
+@keyframes radioSpinner {
+    0% {}
+
+    100% {
+        transform: rotateZ(360deg)
     }
 }
