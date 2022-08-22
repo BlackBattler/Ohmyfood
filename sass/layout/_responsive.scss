@@ -3,30 +3,30 @@
 
     .pageIndex {
 
-        .functioning{
-            & h2{
+        .functioning {
+            & h2 {
                 text-align: center;
                 margin-bottom: 20px;
             }
         }
 
-        .restaurant{
+        .restaurant {
             display: flex;
             flex-direction: column;
             padding: 30px 0px 50px;
 
-            & h2{
+            & h2 {
                 text-align: center;
                 margin-bottom: 20px;
             }
-            
-            &__bloc{
+
+            &__bloc {
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: center;
             }
 
-            &__card{
+            &__card {
                 flex-basis: 45%;
             }
 
@@ -34,7 +34,7 @@
         }
     }
 
-    footer{
+    footer {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -49,22 +49,52 @@
 
 
 /*------------------------------ LAPTOP ------------------------------*/
-@media screen and (min-width:1024px){
+@media screen and (min-width:1024px) {
+
+    header {
+        .logo img {
+            width: 250px;
+        }
+    }
 
     .pageIndex {
 
+        .reservation {
+            & h1 {
+                font-size: 35px;
+            }
+        }
+
         .functioning {
-            padding: 30px 20px 50px;
+            padding: 30px 30px 50px;
+
+            & h2 {
+                font-size: 30px;
+            }
 
             &>div {
                 flex-direction: row;
                 justify-content: space-between;
             }
+
+            &__step {
+                width: 350px;
+            }
+        }
+
+        .restaurant {
+            & h2 {
+                font-size: 30px;
+            }
         }
 
     }
 
-    footer{
+    footer {
+        & h2 {
+            font-size: 30px;
+        }
+
         & div {
             gap: 250px;
         }
@@ -72,11 +102,90 @@
 
 }
 
-/*------------------------------ LAPTOP L ------------------------------*/
-@media screen and (min-width:1440px){
-    footer{
+/*------------------------------ DESKTOP 2K ------------------------------*/
+@media screen and (min-width:1440px) {
+
+    .pageIndex {
+        .functioning {
+            &__step {
+                width: 450px;
+            }
+        }
+
+        .restaurant {
+            &__card {
+
+                .image1 {
+                    object-position: 50% 60%;
+                }
+
+                .image3 {
+                    object-position: 50% 70%;
+                }
+            }
+        }
+
+    }
+
+    footer {
         & div {
             gap: 500px;
         }
     }
+}
+
+/*------------------------------ DESKTOP 4K ------------------------------*/
+@media screen and (min-width:2560px) {
+
+    header {
+        .logo img {
+            width: 500px;
+        }
+    }
+
+    .pageIndex {
+
+        .location {
+            & p {
+                font-size: 32px;
+            }
+        }
+
+        .reservation {
+            & h1 {
+                font-size: 50px;
+            }
+
+            & p {
+                font-size: 26px;
+            }
+
+            & button {
+                height: 75px;
+                width: 400px;
+                font-size: 30px;
+            }
+        }
+
+        .functioning {
+            & h2 {
+                font-size: 50px;
+            }
+        }
+
+        .restaurant {
+
+            & h2 {
+                font-size: 50px;
+            }
+        }
+    }
+
+    footer {
+        & h2 {
+            font-size: 50px;
+        }
+
+    }
+
 }

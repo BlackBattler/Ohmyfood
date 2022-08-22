@@ -944,20 +944,78 @@ footer ul li a:hover {
 }
 /*------------------------------ LAPTOP ------------------------------*/
 @media screen and (min-width: 1024px) {
+  header .logo img {
+    width: 250px;
+  }
+  .pageIndex .reservation h1 {
+    font-size: 35px;
+  }
   .pageIndex .functioning {
-    padding: 30px 20px 50px;
+    padding: 30px 30px 50px;
+  }
+  .pageIndex .functioning h2 {
+    font-size: 30px;
   }
   .pageIndex .functioning > div {
     flex-direction: row;
     justify-content: space-between;
   }
+  .pageIndex .functioning__step {
+    width: 350px;
+  }
+  .pageIndex .restaurant h2 {
+    font-size: 30px;
+  }
+  footer h2 {
+    font-size: 30px;
+  }
   footer div {
     gap: 250px;
   }
 }
-/*------------------------------ LAPTOP L ------------------------------*/
+/*------------------------------ DESKTOP 2K ------------------------------*/
 @media screen and (min-width: 1440px) {
+  .pageIndex .functioning__step {
+    width: 450px;
+  }
+  .pageIndex .restaurant__card .image1 {
+    -o-object-position: 50% 60%;
+       object-position: 50% 60%;
+  }
+  .pageIndex .restaurant__card .image3 {
+    -o-object-position: 50% 70%;
+       object-position: 50% 70%;
+  }
   footer div {
     gap: 500px;
+  }
+}
+/*------------------------------ DESKTOP 4K ------------------------------*/
+@media screen and (min-width: 2560px) {
+  header .logo img {
+    width: 500px;
+  }
+  .pageIndex .location p {
+    font-size: 32px;
+  }
+  .pageIndex .reservation h1 {
+    font-size: 50px;
+  }
+  .pageIndex .reservation p {
+    font-size: 26px;
+  }
+  .pageIndex .reservation button {
+    height: 75px;
+    width: 400px;
+    font-size: 30px;
+  }
+  .pageIndex .functioning h2 {
+    font-size: 50px;
+  }
+  .pageIndex .restaurant h2 {
+    font-size: 50px;
+  }
+  footer h2 {
+    font-size: 50px;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -40,8 +40,8 @@ main {
     }
 
     & button {
-            height: 50px;
-            width: 225px;
+        height: 50px;
+        width: 225px;
         @include bouton;
     }
 
@@ -177,7 +177,7 @@ main {
             right: 5%;
         }
 
-        &:hover{
+        &:hover {
             @include hoverAnimationCard;
         }
     }
