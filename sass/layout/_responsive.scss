@@ -171,12 +171,63 @@
             & h2 {
                 font-size: 50px;
             }
+
+            & div {
+                justify-content: space-evenly;
+
+                & p {
+                    font-size: 26px;
+                }
+            }
+
+            &__step {
+                &__number {
+                    height: 35px;
+                    width: 35px;
+                    left: -35px;
+                }
+            }
         }
 
         .restaurant {
+            padding: 50px 50px 70px;
 
             & h2 {
                 font-size: 50px;
+            }
+
+            &__bloc {
+                gap: 50px;
+            }
+
+            &__card {
+                height: 400px;
+
+                &__description {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    & h3 {
+                        font-size: 28px;
+                    }
+
+                    & p {
+                        font-size: 24px;
+                    }
+
+                }
+
+                &__nouveau {
+                    & p {
+                        font-size: 24px;
+                    }
+                }
+            }
+
+            &__favourite {
+                bottom: 5%;
+                font-size: 45px;
             }
         }
     }
@@ -186,6 +237,19 @@
             font-size: 50px;
         }
 
+        & div {
+            & div {
+                & ul {
+                    & li {
+                        & a{
+                            font-size: 28px;
+                            & i{
+                                width: 35px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
-
 }

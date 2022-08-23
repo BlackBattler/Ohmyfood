@@ -1012,10 +1012,54 @@ footer ul li a:hover {
   .pageIndex .functioning h2 {
     font-size: 50px;
   }
+  .pageIndex .functioning div {
+    justify-content: space-evenly;
+  }
+  .pageIndex .functioning div p {
+    font-size: 26px;
+  }
+  .pageIndex .functioning__step__number {
+    height: 35px;
+    width: 35px;
+    left: -35px;
+  }
+  .pageIndex .restaurant {
+    padding: 50px 50px 70px;
+  }
   .pageIndex .restaurant h2 {
     font-size: 50px;
   }
+  .pageIndex .restaurant__bloc {
+    gap: 50px;
+  }
+  .pageIndex .restaurant__card {
+    height: 400px;
+  }
+  .pageIndex .restaurant__card__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pageIndex .restaurant__card__description h3 {
+    font-size: 28px;
+  }
+  .pageIndex .restaurant__card__description p {
+    font-size: 24px;
+  }
+  .pageIndex .restaurant__card__nouveau p {
+    font-size: 24px;
+  }
+  .pageIndex .restaurant__favourite {
+    bottom: 5%;
+    font-size: 45px;
+  }
   footer h2 {
     font-size: 50px;
+  }
+  footer div div ul li a {
+    font-size: 28px;
+  }
+  footer div div ul li a i {
+    width: 35px;
   }
 }/*# sourceMappingURL=main.css.map */
