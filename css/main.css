@@ -863,6 +863,7 @@ footer ul li a:hover {
   height: 100%;
   flex-basis: 20%;
   display: flex;
+  justify-content: flex-end;
   align-items: flex-end;
   font-size: 16px;
   font-weight: 600;
@@ -911,6 +912,12 @@ footer ul li a:hover {
 
 /*------------------------------ TABLETTE ------------------------------*/
 @media screen and (min-width: 768px) {
+  header .backToIndex {
+    left: 50px;
+  }
+  header .backToIndex i {
+    font-size: 25px;
+  }
   .pageIndex .functioning h2 {
     text-align: center;
     margin-bottom: 20px;
@@ -932,6 +939,16 @@ footer ul li a:hover {
   .pageIndex .restaurant__card {
     flex-basis: 45%;
   }
+  .pageRestaurant .menu__restaurant {
+    padding: 0 70px;
+  }
+  .pageRestaurant .menu fieldset {
+    padding: 0 70px;
+  }
+  .pageRestaurant .menu fieldset legend {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
   footer {
     display: flex;
     flex-direction: column;
@@ -946,6 +963,12 @@ footer ul li a:hover {
 @media screen and (min-width: 1024px) {
   header .logo img {
     width: 250px;
+  }
+  header .backToIndex {
+    left: 100px;
+  }
+  header .backToIndex i {
+    font-size: 35px;
   }
   .pageIndex .reservation h1 {
     font-size: 35px;
@@ -966,6 +989,12 @@ footer ul li a:hover {
   .pageIndex .restaurant h2 {
     font-size: 30px;
   }
+  .pageRestaurant .menu fieldset legend {
+    text-align: center;
+  }
+  .pageRestaurant .menu__card__description {
+    padding-left: 25px;
+  }
   footer h2 {
     font-size: 30px;
   }
@@ -975,6 +1004,9 @@ footer ul li a:hover {
 }
 /*------------------------------ DESKTOP 2K ------------------------------*/
 @media screen and (min-width: 1440px) {
+  header .backToIndex {
+    left: 200px;
+  }
   .pageIndex .functioning__step {
     width: 450px;
   }
@@ -986,6 +1018,22 @@ footer ul li a:hover {
     -o-object-position: 50% 70%;
        object-position: 50% 70%;
   }
+  .pageRestaurant .menu__card__description {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .pageRestaurant .menu__card__description__nom {
+    font-size: 24px;
+  }
+  .pageRestaurant .menu__card__description__side {
+    font-size: 24px;
+  }
+  .pageRestaurant .menu__restaurant {
+    padding: 0 200px;
+  }
+  .pageRestaurant .menu fieldset {
+    padding: 0 200px;
+  }
   footer div {
     gap: 500px;
   }
@@ -994,6 +1042,12 @@ footer ul li a:hover {
 @media screen and (min-width: 2560px) {
   header .logo img {
     width: 500px;
+  }
+  header .backToIndex {
+    left: 700px;
+  }
+  header .backToIndex i {
+    font-size: 70px;
   }
   .pageIndex .location p {
     font-size: 32px;
@@ -1052,6 +1106,37 @@ footer ul li a:hover {
   .pageIndex .restaurant__favourite {
     bottom: 5%;
     font-size: 45px;
+  }
+  .pageRestaurant .menu__restaurant h1 {
+    font-size: 50px;
+  }
+  .pageRestaurant .menu__restaurant {
+    padding: 0 700px;
+  }
+  .pageRestaurant .menu fieldset {
+    padding: 0 700px;
+  }
+  .pageRestaurant .menu fieldset legend {
+    font-size: 42px;
+  }
+  .pageRestaurant .menu__card {
+    height: 100px;
+  }
+  .pageRestaurant .menu__card__description__nom {
+    font-size: 34px;
+    font-weight: 800;
+  }
+  .pageRestaurant .menu__card__description__side {
+    font-size: 34px;
+  }
+  .pageRestaurant .menu__card__prix {
+    font-size: 34px;
+  }
+  .pageRestaurant .menu__card__radioCheckIcon i {
+    font-size: 50px;
+  }
+  .pageRestaurant .menu__card input[type=radio]:checked ~ .menu__card__radioCheckIcon {
+    width: 150px;
   }
   footer h2 {
     font-size: 50px;

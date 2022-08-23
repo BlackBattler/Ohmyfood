@@ -1,6 +1,15 @@
 /*------------------------------ TABLETTE ------------------------------*/
 @media screen and (min-width:768px) {
 
+    header {
+        .backToIndex {
+            left: 50px;
+            & i{
+                font-size: 25px;
+            }
+        }
+    }
+
     .pageIndex {
 
         .functioning {
@@ -34,6 +43,23 @@
         }
     }
 
+    .pageRestaurant {
+        .menu {
+            &__restaurant {
+                padding: 0 70px;
+            }
+
+            & fieldset {
+                padding: 0 70px;
+
+                & legend {
+                    font-size: 24px;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+
     footer {
         display: flex;
         flex-direction: column;
@@ -44,7 +70,6 @@
             gap: 150px;
         }
     }
-
 }
 
 
@@ -54,6 +79,14 @@
     header {
         .logo img {
             width: 250px;
+        }
+
+        .backToIndex {
+
+            left: 100px;
+            & i {
+                font-size: 35px;
+            }
         }
     }
 
@@ -90,6 +123,23 @@
 
     }
 
+
+    .pageRestaurant {
+        .menu {
+            & fieldset {
+                & legend {
+                    text-align: center;
+                }
+            }
+
+            &__card {
+                &__description {
+                    padding-left: 25px;
+                }
+            }
+        }
+    }
+
     footer {
         & h2 {
             font-size: 30px;
@@ -104,6 +154,12 @@
 
 /*------------------------------ DESKTOP 2K ------------------------------*/
 @media screen and (min-width:1440px) {
+
+    header {
+        .backToIndex {
+            left: 200px;
+        }
+    }
 
     .pageIndex {
         .functioning {
@@ -124,7 +180,37 @@
                 }
             }
         }
+    }
 
+    .pageRestaurant {
+        .menu {
+            &__card {
+                &__description {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+
+                    &__nom {
+                        font-size: 24px;
+                    }
+
+                    &__side {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+    .pageRestaurant {
+        .menu {
+            &__restaurant {
+                padding: 0 200px;
+            }
+
+            & fieldset {
+                padding: 0 200px;
+            }
+        }
     }
 
     footer {
@@ -140,6 +226,13 @@
     header {
         .logo img {
             width: 500px;
+        }
+
+        .backToIndex {
+            left: 700px;
+            & i{
+                font-size: 70px;
+            }
         }
     }
 
@@ -232,6 +325,57 @@
         }
     }
 
+    .pageRestaurant {
+        .menu {
+            &__restaurant {
+                & h1 {
+                    font-size: 50px;
+                }
+            }
+
+            &__restaurant {
+                padding: 0 700px;
+            }
+
+            & fieldset {
+                padding: 0 700px;
+
+                & legend {
+                    font-size: 42px
+                }
+            }
+
+            &__card {
+                height: 100px;
+
+                &__description {
+                    &__nom {
+                        font-size: 34px;
+                        font-weight: 800;
+                    }
+
+                    &__side {
+                        font-size: 34px;
+                    }
+                }
+
+                &__prix {
+                    font-size: 34px;
+                }
+
+                &__radioCheckIcon {
+                    & i {
+                        font-size: 50px;
+                    }
+                }
+
+                & input[type="radio"]:checked~.menu__card__radioCheckIcon {
+                    width: 150px;
+                }
+            }
+        }
+    }
+
     footer {
         & h2 {
             font-size: 50px;
@@ -241,9 +385,10 @@
             & div {
                 & ul {
                     & li {
-                        & a{
+                        & a {
                             font-size: 28px;
-                            & i{
+
+                            & i {
                                 width: 35px;
                             }
                         }
