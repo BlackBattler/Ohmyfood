@@ -82,3 +82,17 @@
     }
 
 }
+
+@mixin loadingPage {
+    animation: loaderFade 3s forwards;
+}
+
+@mixin circleLoading {
+    animation: circleLoader 2s both 300ms;
+}
+
+@mixin textLoading {
+    transform-origin: 50% 50% -25px;
+    transform-style: preserve-3d;
+    animation: textFlip 2s both 700ms;
+}

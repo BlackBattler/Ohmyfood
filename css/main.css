@@ -81,6 +81,48 @@
     transform: rotateZ(360deg);
   }
 }
+@-webkit-keyframes circleLoader {
+  100% {
+    transform: rotateZ(720deg);
+  }
+}
+@keyframes circleLoader {
+  100% {
+    transform: rotateZ(720deg);
+  }
+}
+@-webkit-keyframes textFlip {
+  0% {
+    transform: rotateZ(-360deg);
+  }
+  70% {
+    transform: rotateZ(0);
+  }
+}
+@keyframes textFlip {
+  0% {
+    transform: rotateZ(-360deg);
+  }
+  70% {
+    transform: rotateZ(0);
+  }
+}
+@-webkit-keyframes loaderFade {
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+@keyframes loaderFade {
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -457,6 +499,47 @@ header .backToIndex i {
 main {
   display: flex;
   flex-direction: column;
+}
+
+/*------------------------------ SECTION LOAD SPINNER ------------------------------*/
+.loading {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  pointer-events: none;
+  /*------------------------------ ANIMATION ------------------------------*/
+  -webkit-animation: loaderFade 3s forwards;
+          animation: loaderFade 3s forwards;
+}
+.loading__spinner {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border-top: 10px double #9356DC;
+  border-bottom: 10px double #FF79DA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*------------------------------ ANIMATION ------------------------------*/
+  -webkit-animation: circleLoader 2s both 300ms;
+          animation: circleLoader 2s both 300ms;
+}
+.loading__text {
+  position: absolute;
+  perspective: 1000px;
+  font-size: 25px;
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 100;
+  /*------------------------------ ANIMATION ------------------------------*/
+  transform-origin: 50% 50% -25px;
+  transform-style: preserve-3d;
+  -webkit-animation: textFlip 2s both 700ms;
+          animation: textFlip 2s both 700ms;
 }
 
 /*------------------------------ SECTION LOCALISATION ------------------------------*/
@@ -846,17 +929,20 @@ footer ul li a:hover {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  padding: 15px 10px 5px 15px;
-  height: 100%;
+  padding: 15px 0 5px 10px;
   flex-basis: 80%;
 }
 .menu__card__description__nom {
   font-size: 18px;
   font-weight: 600;
   overflow: hidden;
+  height: 20px;
 }
 .menu__card__description__side {
+  font-size: 16px;
+  font-weight: 400;
   overflow: hidden;
+  height: 18px;
 }
 .menu__card__prix {
   display: inline-flex;
@@ -1018,21 +1104,23 @@ footer ul li a:hover {
     -o-object-position: 50% 70%;
        object-position: 50% 70%;
   }
+  .pageRestaurant .menu__restaurant {
+    padding: 0 200px;
+  }
+  .pageRestaurant .menu fieldset {
+    padding: 0 200px;
+  }
   .pageRestaurant .menu__card__description {
     padding-top: 10px;
     padding-bottom: 10px;
   }
   .pageRestaurant .menu__card__description__nom {
     font-size: 24px;
+    height: 24px;
   }
   .pageRestaurant .menu__card__description__side {
-    font-size: 24px;
-  }
-  .pageRestaurant .menu__restaurant {
-    padding: 0 200px;
-  }
-  .pageRestaurant .menu fieldset {
-    padding: 0 200px;
+    font-size: 22px;
+    height: 22px;
   }
   footer div {
     gap: 500px;
@@ -1125,9 +1213,11 @@ footer ul li a:hover {
   .pageRestaurant .menu__card__description__nom {
     font-size: 34px;
     font-weight: 800;
+    height: 36px;
   }
   .pageRestaurant .menu__card__description__side {
-    font-size: 34px;
+    font-size: 32px;
+    height: 34px;
   }
   .pageRestaurant .menu__card__prix {
     font-size: 34px;

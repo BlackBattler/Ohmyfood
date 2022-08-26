@@ -3,6 +3,48 @@ main {
     flex-direction: column;
 }
 
+/*------------------------------ SECTION LOAD SPINNER ------------------------------*/
+.loading {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    pointer-events: none;
+
+    /*------------------------------ ANIMATION ------------------------------*/
+    @include loadingPage;
+
+    &__spinner {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border-top: 10px double $colorPrimary;
+        border-bottom: 10px double $colorSecondary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /*------------------------------ ANIMATION ------------------------------*/
+        @include circleLoading;
+    }
+
+    &__text {
+        position: absolute;
+        perspective: 1000px;
+        font-size: 25px;
+        font-family: 'Shrikhand', sans-serif;
+        font-weight: 100;
+
+        /*------------------------------ ANIMATION ------------------------------*/
+        @include textLoading;
+    }
+}
+
+
 /*------------------------------ SECTION LOCALISATION ------------------------------*/
 .location {
     background-color: $backgroundColorDarkGrey;
