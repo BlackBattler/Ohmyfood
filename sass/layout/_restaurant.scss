@@ -68,7 +68,9 @@
             width: 20px;
             border-bottom: 3px solid $colorTertiary;
             margin-bottom: 10px;
+            font-size: 18px;
         }
+
     }
 
     /*------------------------------ CARTE MENU ------------------------------*/
@@ -79,6 +81,7 @@
         height: 75px;
         display: flex;
         justify-content: space-between;
+        cursor: pointer;
 
         /*-------------------- RADIO ANIMATION --------------------*/
         transform-origin: center right;
@@ -107,8 +110,9 @@
 
         /*-------------------- DESCRIPTION --------------------*/
         &__label {
-            display: inline-flex;
+            display: flex;
             flex: 1 1 100%;
+            cursor: pointer;
         }
 
         &__description {
@@ -117,18 +121,18 @@
             gap: 5px;
             padding: 15px 0 5px 10px;
             flex-basis: 80%;
-
+            
             &__nom {
-                font-size: 18px;
-                font-weight: 600;
-                overflow: hidden;
-                height: 20px;
+                font-size: 16px;
+                font-weight: 700;
+                @include textOverflow;
+                height: 18px;
             }
 
             &__side {
                 font-size: 16px;
                 font-weight: 400;
-                overflow: hidden;
+                @include textOverflow;
                 height: 18px;
             }
 
@@ -143,7 +147,7 @@
             align-items: flex-end;
             font-size: 16px;
             font-weight: 600;
-            padding: 0 20px 10px;
+            padding: 0 10px 10px 0;
 
         }
 

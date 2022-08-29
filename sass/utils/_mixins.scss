@@ -96,3 +96,8 @@
     transform-style: preserve-3d;
     animation: textFlip 2s both 700ms;
 }
+
+@mixin textOverflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

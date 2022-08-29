@@ -868,6 +868,7 @@ footer ul li a:hover {
   width: 20px;
   border-bottom: 3px solid #99E2D0;
   margin-bottom: 10px;
+  font-size: 18px;
 }
 .menu__card {
   background-color: white;
@@ -876,6 +877,7 @@ footer ul li a:hover {
   height: 75px;
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
   /*-------------------- RADIO ANIMATION --------------------*/
   transform-origin: center right;
   /*-------------------- CARTE ANIMATION --------------------*/
@@ -922,8 +924,9 @@ footer ul li a:hover {
           animation-delay: 0.8s;
 }
 .menu__card__label {
-  display: inline-flex;
+  display: flex;
   flex: 1 1 100%;
+  cursor: pointer;
 }
 .menu__card__description {
   display: flex;
@@ -933,15 +936,17 @@ footer ul li a:hover {
   flex-basis: 80%;
 }
 .menu__card__description__nom {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 700;
   overflow: hidden;
-  height: 20px;
+  text-overflow: ellipsis;
+  height: 18px;
 }
 .menu__card__description__side {
   font-size: 16px;
   font-weight: 400;
   overflow: hidden;
+  text-overflow: ellipsis;
   height: 18px;
 }
 .menu__card__prix {
@@ -953,7 +958,7 @@ footer ul li a:hover {
   align-items: flex-end;
   font-size: 16px;
   font-weight: 600;
-  padding: 0 20px 10px;
+  padding: 0 10px 10px 0;
 }
 .menu__card__radioCheckIcon {
   display: flex;
