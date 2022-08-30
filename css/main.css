@@ -986,6 +986,7 @@ footer ul li a:hover {
 .menu__commander {
   display: flex;
   justify-content: center;
+  margin-top: 25px;
 }
 .menu__commander button {
   height: 50px;
@@ -1034,14 +1035,15 @@ footer ul li a:hover {
     flex-basis: 45%;
   }
   .pageRestaurant .menu__restaurant {
-    padding: 0 70px;
+    padding: 0 50px;
   }
   .pageRestaurant .menu fieldset {
-    padding: 0 70px;
+    padding: 0 50px;
   }
   .pageRestaurant .menu fieldset legend {
     font-size: 24px;
     margin-bottom: 25px;
+    text-align: center;
   }
   footer {
     display: flex;
@@ -1082,9 +1084,6 @@ footer ul li a:hover {
   }
   .pageIndex .restaurant h2 {
     font-size: 30px;
-  }
-  .pageRestaurant .menu fieldset legend {
-    text-align: center;
   }
   .pageRestaurant .menu__card__description {
     padding-left: 25px;
@@ -1158,6 +1157,7 @@ footer ul li a:hover {
     height: 75px;
     width: 400px;
     font-size: 30px;
+    border-radius: 50px;
   }
   .pageIndex .functioning h2 {
     font-size: 50px;
@@ -1206,6 +1206,9 @@ footer ul li a:hover {
   .pageRestaurant .menu__restaurant h1 {
     font-size: 50px;
   }
+  .pageRestaurant .menu__restaurant__favourite {
+    font-size: 50px;
+  }
   .pageRestaurant .menu__restaurant {
     padding: 0 700px;
   }
@@ -1235,6 +1238,12 @@ footer ul li a:hover {
   }
   .pageRestaurant .menu__card input[type=radio]:checked ~ .menu__card__radioCheckIcon {
     width: 150px;
+  }
+  .pageRestaurant .menu__commander button {
+    height: 75px;
+    width: 250px;
+    font-size: 34px;
+    border-radius: 50px;
   }
   footer h2 {
     font-size: 50px;

@@ -122,7 +122,7 @@
             padding: 15px 0 5px 10px;
             flex-basis: 80%;
             @include textOverflow;
-            
+
             &__nom {
                 font-size: 16px;
                 font-weight: 700;
@@ -178,6 +178,7 @@
     &__commander {
         display: flex;
         justify-content: center;
+        margin-top: 25px;
 
         & button {
             height: 50px;

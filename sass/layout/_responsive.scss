@@ -47,15 +47,16 @@
     .pageRestaurant {
         .menu {
             &__restaurant {
-                padding: 0 70px;
+                padding: 0 50px;
             }
 
             & fieldset {
-                padding: 0 70px;
+                padding: 0 50px;
 
                 & legend {
                     font-size: 24px;
                     margin-bottom: 25px;
+                    text-align: center;
                 }
             }
         }
@@ -128,12 +129,6 @@
 
     .pageRestaurant {
         .menu {
-            & fieldset {
-                & legend {
-                    text-align: center;
-                }
-            }
-
             &__card {
                 &__description {
                     padding-left: 25px;
@@ -258,6 +253,7 @@
                 height: 75px;
                 width: 400px;
                 font-size: 30px;
+                border-radius: 50px;
             }
         }
 
@@ -332,6 +328,10 @@
                 & h1 {
                     font-size: 50px;
                 }
+
+                &__favourite {
+                    font-size: 50px;
+                }
             }
 
             &__restaurant {
@@ -374,6 +374,15 @@
 
                 & input[type="radio"]:checked~.menu__card__radioCheckIcon {
                     width: 150px;
+                }
+            }
+
+            &__commander {
+                & button {
+                    height: 75px;
+                    width: 250px;
+                    font-size: 34px;
+                    border-radius: 50px;
                 }
             }
         }
