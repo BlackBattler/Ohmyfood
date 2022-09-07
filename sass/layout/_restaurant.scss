@@ -60,7 +60,7 @@
         display: flex;
         flex-direction: column;
         border: none;
-        padding: 0 15px;
+        margin: 0 10px;
         gap: 20px;
 
         & legend {
@@ -88,8 +88,7 @@
         @include carteMenu;
 
         /*-------------------- CARTE ANIMATION --------------------*/
-        animation: menuApparition 800ms;
-        animation-fill-mode: forwards;
+        animation: menuApparition 800ms forwards;
         opacity: 0%;
 
         &:nth-child(2) {
@@ -111,12 +110,13 @@
         /*-------------------- DESCRIPTION --------------------*/
         &__label {
             display: flex;
-            flex: 1 1 100%;
+            flex: 1 1 80%;
             cursor: pointer;
+            width: 350px;
         }
 
         &__description {
-            display: flex;
+            display: inline-flex;
             flex-direction: column;
             gap: 5px;
             padding: 15px 0 5px 10px;
@@ -130,7 +130,7 @@
             }
 
             &__side {
-                font-size: 16px;
+                font-size: 15px;
                 font-weight: 400;
                 @include textOverflow;
             }
@@ -140,14 +140,12 @@
         &__prix {
             display: inline-flex;
             height: 100%;
-            flex-basis: 20%;
-            display: flex;
+            flex: 1 1 15%;
             justify-content: flex-end;
             align-items: flex-end;
             font-size: 16px;
             font-weight: 600;
-            padding: 0 10px 10px 0;
-
+            padding: 0 10px 17px 0;
         }
 
         &__radioCheckIcon {
